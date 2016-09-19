@@ -1,0 +1,38 @@
+{
+  "name": "thienemann_responsive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.0.0-rc.4",
+    "autoprefixer": "^6.3.6",
+    "del": "^2.2.0",
+    "fs-extra": "^0.30.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sourcemaps": "2.0.0-alpha",
+    "gulp-string-replace": "^0.1.1",
+    "gulp-uglify": "2.0.0",
+    "gulp-watch": "4.3.9",
+    "node-sass-import-once": "^1.2.0",
+    "rsvp": "^3.2.1",
+    "run-sequence": "^1.1.5"
+  }
+}
