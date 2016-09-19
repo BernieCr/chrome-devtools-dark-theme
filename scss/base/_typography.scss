@@ -8,8 +8,8 @@ body.platform-mac ::shadow {
   
   .monospace,
   .source-code {
-    font-size: 12px !important;
-    line-height: 1.6em !important;
+    font-size: $font-size !important;
+    line-height: $line-height !important;
     font-family: $mac-fonts !important;
     
     // Apply antialiased setting for dark themes only
@@ -27,8 +27,8 @@ body.platform-windows ::shadow {
   .monospace,
   .source-code {
     font-family: $win-fonts !important;
-    font-size: 12px !important;
-    line-height: 1.6em !important;
+    font-size: $font-size !important;
+    line-height: $line-height !important;
   }
 }
 
@@ -39,32 +39,8 @@ body.platform-linux ::shadow {
   .monospace,
   .source-code {
     font-family: $lin-fonts !important;
-    font-size: 12px !important;
-    line-height: 1.6em !important;
+    font-size: $font-size !important;
+    line-height: $line-height !important;
   }
 }
 
-// Sources tabs
-body.platform-mac .sources ::shadow,
-body.platform-mac .console ::shadow,
-body.platform-mac .console-view-wrapper ::shadow {
-  .tabbed-pane-header-tab-title {
-    font-family: $mac-fonts !important;
-  }
-}
-
-body.platform-windows .sources ::shadow,
-body.platform-windows .console ::shadow,
-body.platform-windows .console-view-wrapper ::shadow {
-  .tabbed-pane-header-tab-title {
-    font-family: $win-fonts !important;
-  }
-}
-
-body.platform-linux .sources ::shadow,
-body.platform-linux .console ::shadow,
-body.platform-linux .console-view-wrapper ::shadow {
-  .tabbed-pane-header-tab-title {
-    font-family: $lin-fonts !important;
-  }
-}

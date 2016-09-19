@@ -22,7 +22,8 @@ $accent                 // Accent / Highlight
   .elements ::shadow,
   .sources,
   .console,
-  .console-view-wrapper {
+  .console-view-wrapper,
+  .sources-view-wrapper {
 
     ::shadow .tabbed-pane-header {
       flex: none !important;
@@ -111,7 +112,7 @@ $accent                 // Accent / Highlight
           border: 0 none !important;
           box-shadow: inset 0 1px 0 darken($background, 3.5%),
                       inset 0 -1px 0 darken($background, 3.5%);
-          color: $comments;
+          color: $base06;
           transition: transform 0.15s ease;
 
           .tabbed-pane-header-tab-title {
@@ -356,13 +357,10 @@ $accent                 // Accent / Highlight
     .tabbed-pane-header {
       flex: 0 0 30px;
 
-      .tabbed-pane-header-tabs {
-        margin-left: 12px;
+     .tabbed-pane-header-tabs {
 
         .tabbed-pane-header-tab {
-          font-size: 10px;
-          height: 28px;
-          padding: 6px 12px !important;
+          padding: 6px 0 !important;
         }
       }
     }
@@ -692,7 +690,8 @@ $accent                 // Accent / Highlight
               border: 0 none !important;
               box-shadow: inset 0 1px 0 darken($background, 3.5%),
                           inset 0 -1px 0 darken($background, 3.5%);
-              color: $comments;
+
+
 /*               transition: transform 0.15s ease; */
 
 /*               .tabbed-pane-header-tab-title {

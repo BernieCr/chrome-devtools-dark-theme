@@ -8,27 +8,29 @@ $dark-theme: true; // Set true if theme has a dark background
 @import 'base/theme-config';
 
 // Palette
-$base00: #282c34; // darkest grey
-$base01: #2c323c;
+$base00: #232323; // bg
+$base01: #213335; // gutter
 $base02: #373f4b;
 $base03: #3e4451;
-$base04: #5c636c;
+$base04: #57a64a; // Comments
 $base05: #7d8793;
 $base06: #abb2ba;
-$base07: #c3cbd4; // brighest grey
-$red: #df6b75; // red
-$orange: #d19965; // orange
+$base07: #dadada; // brighest grey
+$red: #569cd6; // red
+$orange: #9cdcfe; // orange
 $yellow: #e2c08d; // yellow
-$green: #97c279; // green
+$green: #d69d85; // green
 $aqua: #56b5c2; // aqua
 $blue: #61afef; // blue
 $purple: #c578dd; // purple
 $brown: #d19365; // brown
 
+$cta: $base07;
+
 // Styles
 @include styles(
                 $base00, // Background
-                $base01, // Background - Highlight
+                $base01, // Background - Highlight / Gutter
                 $base04, // Comments / Secondary Content
                 $base07, // Body text / default code / primary content / HTML attr name / CSS rule value
                 $base07, // Optional emphasized content
@@ -66,4 +68,109 @@ $brown: #d19365; // brown
     ::shadow .tree-outline .value {
         color: $green !important;
     }
+}
+
+
+
+/*
+Chrome inspectorStyle.css Theme
+*/
+
+body{color:rgb(213, 213, 213);}
+.platform-linux{color:rgb(189, 198, 207);}
+.platform-mac{color:rgb(189, 198, 207);}
+label:hover input{box-shadow:highlight 0px 0px 3px;}
+.inspected-page-placeholder{background-color:rgb(36, 36, 36);}
+.toolbar-background{border-bottom-color:rgb(92, 92, 92);}
+.bubble-repeat-count{background-color:rgb(66, 89, 127);color:black;}
+.error-message{color:red;}
+.outline-disclosure li.hovered:not(.selected) .selection{background-color:rgba(199, 134, 38, 0.0980392);}
+.outline-disclosure li.selected .selection{background-color:rgb(54, 54, 54);}
+.outline-disclosure li.in-clipboard .highlight{outline-color:rgb(86, 86, 86);}
+.outline-disclosure li.elements-drag-over .selection{border-top-color:$cta !important;}
+ol.outline-disclosure:focus li.selected .selection{background-color:$cta !important;}
+ol.outline-disclosure:focus li.parent.selected::before{background-color:rgb(36, 36, 36);}
+ol.outline-disclosure:focus li.selected{color:black;}
+.outline-disclosure li::before{background-color:rgb(145, 145, 145);}
+.child-editing{color:rgb(213, 213, 213) !important;}
+.sidebar{background-color:rgb(42, 42, 42);}
+.pane-title-button{color:rgb(227, 227, 227);border-top-color:rgb(90, 90, 90);border-right-color:rgb(90, 90, 90);border-bottom-color:rgb(90, 90, 90);border-left-color:rgb(90, 90, 90);background-color:rgb(44, 44, 44);background-image:linear-gradient(rgb(37, 37, 37), rgb(52, 52, 52));}
+.pane-title-button:active{background-color:rgb(56, 56, 56);background-image:linear-gradient(rgb(66, 66, 66), rgb(44, 44, 44));}
+.sidebar-tree-section{color:rgb(126, 144, 163);text-shadow:rgba(0, 0, 0, 0.74902) 0px 1px 0px;}
+.sidebar-tree-item .disclosure-button{background-color:rgba(255, 255, 255, 0.74902);}
+.sidebar-tree-item.selected .disclosure-button{background-color:rgb(36, 36, 36);}
+.sidebar-tree-item.selected.expanded .disclosure-button{background-color:rgb(36, 36, 36);}
+.spinner-icon::before, .sidebar-tree-item.wait .icon::before{border-top-color:rgb(127, 127, 127);border-right-color:rgb(127, 127, 127);border-bottom-color:rgb(127, 127, 127);border-left-color:rgb(127, 127, 127);}
+.sidebar-tree-item.wait.selected .icon::before{border-top-color:rgb(36, 36, 36);border-right-color:rgb(36, 36, 36);border-bottom-color:rgb(36, 36, 36);border-left-color:rgb(36, 36, 36);}
+li.selected .status .bubble-repeat-count{background-color:rgb(36, 36, 36) !important;color:rgb(123, 101, 65) !important;}
+/*
+:focus li.selected .status .bubble-repeat-count{color:rgb(219, 157, 83) !important;}
+*/
+body.inactive li.selected .status .bubble-repeat-count{color:rgb(96, 96, 96) !important;}
+.sidebar-tree-item.selected, .-theme-selection-color{color:black;background-color:$cta !important;}
+:focus .sidebar-tree-item.selected{background-color:$cta !important;}
+body.inactive .sidebar-tree-item.selected{background-color:rgb(75, 75, 75);}
+.sidebar-tree-item.selected .subtitle{color:black;}
+.bubble-repeat-count.debug, .console-debug-level .bubble-repeat-count{background-color:rgb(0, 0, 255) !important;}
+/*.bubble-repeat-count.warning, .console-warning-level .bubble-repeat-count{background-color:rgb(255, 187, 23) !important;}*/
+.bubble-repeat-count.error, .console-error-level .bubble-repeat-count{background-color:rgb(220, 39, 39) !important;}
+.root-view{background-color:rgb(36, 36, 36);}
+
+::shadow .dt-checkbox-button {
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+
+.dt-checkbox-button {
+    filter: none !important;
+    -webkit-filter: none !important;
+
+}
+
+::shadow :host-context(.-theme-with-dark-background) input[type="checkbox"] {
+    filter: none !important;
+    -webkit-filter: none !important;
+
+}
+
+:host-context(.-theme-with-dark-background) input[type="checkbox"] {
+    filter: none !important;
+    -webkit-filter: none !important;
+
+}
+
+.cm-js-property {
+    color: #4ec9b0 !important;
+}
+
+#sources-panel-sources-view .tabbed-pane-header-tab:not(.selected) .tabbed-pane-header-tab-title {
+    color: $base05 !important;
+}
+
+
+.metrics {
+
+    & .margin {
+        background-color: darken(#AE8152, 30%) !important;
+    }
+
+    & .border {
+        background-color: darken(#E3C381, 30%) !important;
+    }
+
+    & .padding {
+        background-color: darken(#B6C37E, 30%) !important;
+    }
+
+    & .content {
+        background-color: darken(#87B1BC, 30%) !important;
+    }
+}
+
+::shadow rect.animation-timeline-grid-line {
+    fill: #202020 !important;
+}
+
+.filter-bitset-filter li.selected {
+    background-color: $base07 !important;
 }

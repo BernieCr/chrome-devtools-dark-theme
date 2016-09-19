@@ -11,6 +11,9 @@ $custom-easing: cubic-bezier(.55,0,.1,1);
 $row-width: 40rem;
 $row-min-width: 24rem;
 
-$mac-fonts: 'Hack', 'Source Code Pro', 'Droid Sans Mono', Monaco, Menlo, monospace;
+$font-size: 12px;
+$line-height: 1.5;
+
+$mac-fonts: Menlo, monospace;
 $win-fonts: 'Hack', 'Source Code Pro', 'Droid Sans Mono', Consolas, Lucida Console, monospace;
 $lin-fonts: 'Hack', 'Source Code Pro', 'Droid Sans Mono', dejavu sans mono, monospace;
