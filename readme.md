@@ -22,7 +22,7 @@ To customize this theme you can edit the CSS (SASS) by yourself:
 - modify the .scss under src/
 - compile the .scss to dist/theme.css by running `gulp generate.css`
 - In dist/devtools.js, comment out Line 9: ` var theStyle = ':host-context(.platform-mac) .mo [...]`. Now the theme.css file gets loaded dynamically.
-- Load the extension locally in Chrome: go to `chrome://extensions/`, enable 'Developer Mode', click 'Load unpacked extension' and load it
+- Load the extension locally in Chrome: go to `chrome://extensions/`, enable 'Developer Mode', click 'Load unpacked extension' and load it (select the `dist/` folder).
 - To style the DevTools, you can actually inspect the DevTools window itself! Make sure the DevTools are undocked, e.g. they are in a seperate window, then press Cmd+Option+I and another DevTools window opens.
 
 <br/>
