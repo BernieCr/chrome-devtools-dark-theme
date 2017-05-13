@@ -7,13 +7,10 @@
 ## Installation
 - Install the extension from the Chrome Web Store:  <br/>
 https://chrome.google.com/webstore/detail/chrome-devtools-dark-them/bfcohnmjbpeilfcijkjkeggbdmehhnbk
-<br/>
 
 - Enable DevTools Experiments in Chrome (http://islegend.com/development/how-to-enable-devtools-experiments-within-google-chrome/)
-<br/>
 
 - Go to DevTools Settings -> Experiments -> Enable "Allow Custom UI themes". 
-<br/>
 
 - Go to DevTools Settings -> Preferences and select Theme: "Dark", which enables Chrome's own Dark Theme. This theme builds on top of that.
 
